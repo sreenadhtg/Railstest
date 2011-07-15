@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+
+body{ font-size:13px; color:#000; font-weight:normal;font-family:helvetica,arial,clean,sans-serif; margin:0 auto; padding:0px; text-align:center;}
+div {display:block;}
+
+#maincontent {
+		width:990px;
+		margin:0 auto;
+}
+
+#login {
+	 text-align:right;
+	 width:430px;
+	 margin: 250px 0 0 250px;
+	 border:1px dotted #000000;
+}
+
+#login label {float:left;}
+#login div { margin: 15px;}

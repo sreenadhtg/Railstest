@@ -1,0 +1,20 @@
+ 
+  <div id="login">
+	<% form_for :user, @user, :url => { :action => "login" } do |f| %>
+		
+	  <div>	
+		  <label>Username:</label>
+		  <%= f.text_field :username ,:class => "text1"%>
+	  </div>
+	  <div>
+	  	<label>Password:</label>
+		<%= f.password_field :password,:class => "text1" %>
+	  </div>
+	  <div>
+		  <%= submit_tag ('Login',:class => "button") %>
+		  <%= flash[:notice]%> <br/>
+		  <%=  link_to "SignUp", :controller => "user", :action => "register"  %>
+	  </div>
+	  
+	<% end %>
+ </div>
