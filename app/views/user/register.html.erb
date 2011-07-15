@@ -1,15 +1,28 @@
 
 
 <% form_for :user, @user, :url => { :action => "create" } do |f| %>
-
-	<div>
-		
-			Username: <%= f.text_field :username %><br/>
-			Password : <%= f.password_field :password %><br/>
-			Confirm Password :<%= f.password_field :password_confirmation %> <br/>
-			<%= submit_tag("SignUp") %><br/>
-			<%= flash[:notice]%>
 	
+	<div id="register">
+			<div style="text-align:left;">
+		    	<h3>Sign Up</h3>
+		    </div>
+			<div>
+			    <label class="label1">Username</label>
+				<%= f.text_field :username %>
+			</div>
+			<div>
+				 <label class="label1">Password </label>
+				 <%= f.password_field :password %>
+			</div>
+			<div> 
+				<label class="label1">Confirm Password :</label>
+				<%= f.password_field :password_confirmation %> 
+			</div>
+			
+			<div>
+				<%= submit_tag("SignUp") %>
+				<%= flash[:notice]%>
+			</div>
 	</div>
 	
 <% end %>
